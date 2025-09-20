@@ -13,7 +13,7 @@ public class Main {
          * 3. 동일한 클래스 타입의 빈이 여러 개 존재한다면 해당 클래스를 기반으로 빈을 가져올 경우 예외가 발생한다.
          * 3-1. 이 경우 @Primary 애노테이션을 통해 기본 빈을 가져오도록 할 수 있다.
          * 3-2. 기본 빈 외에는 빈 이름(메서드 이름)을 식별자로 하여 조회할 수 있다.
-         * 3-3. @Bean에 name 또는 value 속성을 통해 빈 이름을 등록하여 빈 이름을 통해 가져올 수 있따.
+         * 3-3. @Bean에 name 또는 value 속성을 통해 빈 이름을 등록하여 빈 이름을 통해 가져올 수 있다.
          */
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
