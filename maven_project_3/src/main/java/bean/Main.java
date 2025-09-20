@@ -1,5 +1,6 @@
-package bean.entity;
+package bean;
 
+import bean.entity.Parrot;
 import config.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

@@ -1,9 +1,10 @@
-package parrot.entity;
+package bean;
 
+import bean.entity.Parrot;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ParrotMain {
+public class Main {
     public static void main(String[] args) {
         /*
         * [스프링 컨텍스트] 스프링 컨텍스트 인스턴스 생성

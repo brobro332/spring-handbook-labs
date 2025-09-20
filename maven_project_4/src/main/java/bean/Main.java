@@ -1,4 +1,4 @@
-package entity;
+package bean;
 
 import config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

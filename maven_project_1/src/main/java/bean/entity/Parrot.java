@@ -1,4 +1,4 @@
-package parrot.entity;
+package bean.entity;
 
 public class Parrot {
     private String name;
