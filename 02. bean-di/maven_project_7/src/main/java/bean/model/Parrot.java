@@ -1,10 +1,7 @@
-package bean.entity;
+package bean.model;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Parrot {
-    private String name;
+    private final String name;
 
     public Parrot(String name) {
         System.out.println("parrot created");

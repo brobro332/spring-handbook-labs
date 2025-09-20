@@ -2,7 +2,7 @@ package config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import bean.entity.Parrot;
+import bean.model.Parrot;
 import org.springframework.context.annotation.Primary;
 
 @Configuration

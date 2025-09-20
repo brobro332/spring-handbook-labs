@@ -1,5 +1,8 @@
-package bean.entity;
+package bean.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Parrot {
     private String name;
 

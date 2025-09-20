@@ -1,7 +1,7 @@
 package bean;
 
-import bean.entity.Parrot;
-import bean.entity.Person;
+import bean.model.Parrot;
+import bean.model.Person;
 import config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

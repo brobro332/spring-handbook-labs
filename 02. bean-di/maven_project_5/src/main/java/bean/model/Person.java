@@ -1,4 +1,4 @@
-package bean.entity;
+package bean.model;
 
 public class Person {
     private String name;

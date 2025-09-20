@@ -1,4 +1,4 @@
-package bean.entity;
+package bean.model;
 
 import org.springframework.stereotype.Component;
 
@@ -6,11 +6,8 @@ import org.springframework.stereotype.Component;
 public class Parrot {
     private String name;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Parrot(String name) {
+        System.out.println("parrot created");
         this.name = name;
     }
 
