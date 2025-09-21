@@ -1,19 +1,8 @@
-### Spring ###
-encodings.xml
-misc.xml
-vcs.xml
-modules.xml
-
-### Spring Boot ###
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-mvnw
-*.cmd
-maven-wrapper.properties
-.gitattributes
 
 ### STS ###
 .apt_generated
