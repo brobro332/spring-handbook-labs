@@ -1,9 +1,9 @@
 package polymorphism.repository;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import polymorphism.model.Comment;
 
-@Component
+@Repository
 public class DbCommentRepository implements CommentRepository {
     @Override
     public void storeComment(Comment comment) {

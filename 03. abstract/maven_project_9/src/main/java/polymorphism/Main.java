@@ -10,9 +10,11 @@ public class Main {
     public static void main(String[] args) {
         /*
          * [스테레오 타입 애노테이션을 통한 의존성 주입]
-         * 1. 각 계층(서비스, 레포지토리, 프록시)의 구현체를 컴포넌트로 만든다.
-         * 2. 구성 클래스에서 컴포넌트 스캔을 수행한다.
-         * 3. 스프링 컨텍스트에 의해 의존성 주입이 되고, 빈을 가져올 수 있다.
+         * 1. 각 계층(서비스, 레포지토리, 프록시)의 구현체를 컴포넌트로 만듬
+         * 1-1. 이때 @Controller, @Service, @Repository 등으로 객체의 책임을 명시하는 것이 권장됨
+         * 1-2. 따로 제공되는 애노테이션이 없다면 @Component 사용
+         * 2. 구성 클래스에서 컴포넌트 스캔을 수행함
+         * 3. 스프링 컨텍스트에 의해 의존성 주입이 되고, 빈을 가져올 수 있음
          */
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
