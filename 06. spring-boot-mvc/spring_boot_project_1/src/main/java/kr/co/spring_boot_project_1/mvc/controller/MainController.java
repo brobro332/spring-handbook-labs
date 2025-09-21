@@ -31,7 +31,7 @@ public class MainController {
      * 1. @PathVariable 애노테이션을 사용함
      * 2. 경로를 정의할 때 중괄호 사이에 변수 이름을 지정한다.
      */
-    @RequestMapping("/homeV1")
+    @RequestMapping("/home/v1")
     public String homeV1(Model model) {
         model.addAttribute("username", "brobro332");
         model.addAttribute("color", "blue");
@@ -39,7 +39,7 @@ public class MainController {
         return "home.html";
     }
 
-    @RequestMapping("/homeV2")
+    @RequestMapping("/home/v2")
     public String homeV2(@RequestParam(required = false) String color, Model model) {
         model.addAttribute("username", "brobro332");
         model.addAttribute("color", color);
@@ -47,7 +47,7 @@ public class MainController {
         return "home.html";
     }
 
-    @RequestMapping("/homeV3/{color}")
+    @RequestMapping("/home/v3/{color}")
     public String homeV3(@PathVariable String color, Model model) {
         model.addAttribute("username", "brobro332");
         model.addAttribute("color", color);
