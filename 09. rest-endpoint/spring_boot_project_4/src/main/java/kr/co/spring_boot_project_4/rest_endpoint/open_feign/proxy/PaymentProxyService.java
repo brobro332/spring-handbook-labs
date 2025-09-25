@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import java.util.UUID;
 
@@ -43,4 +44,14 @@ public class PaymentProxyService {
         return response.getBody();
     }
 
+    public Mono<Payment> createPaymentWebClient(Payment payment) {
+        String uri = paymentServiceUrl + "/payment";
+
+        return webClient.post()
+            .uri(uri)
+            .header("requestId", UUID.randomUUID().toString())
+            .body(Mono.just(payment), Payment.class)
+            .retrieve()
+            .bodyToMono(Payment.class);
+    }
 }
