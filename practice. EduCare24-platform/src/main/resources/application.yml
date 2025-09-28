@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: EduCare24-platform
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SCOTT
+    password: TIGER 
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.OracleDialect
+    open-in-view: false
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+logging:
+  level:
+    org.springframework: INFO
+    org.hibernate.SQL: trace
